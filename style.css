@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*first-section*/
+#HeroSection{
+    background-color: #E8F9FD;
+}
+.hero-welcome{
+    margin: 0;
+    color: rgba(52, 52, 52, 0.31);
+    font-weight: bold;
+    letter-spacing: 30px;
+    transform: rotate(-90deg);
+    z-index: 10020;
+    top: 45%;
+    left: -50px;
+    position: absolute;
+}
+.my-btn{
+    border: 2px solid cyan;
+    padding: 12px 18px;
+    border-radius : 30px;
+    background-color: transparent;
+    color: cyan;
+    transition: 0.4s;
+}
+.my-btn:hover{
+    border: 2px solid cyan;
+    padding: 12px 25px;
+    border-radius : 30px;
+    color: cyan;
+}
+.profile-circle-1{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 80px solid #79DAE8;
+    box-shadow: 0 0 80px #79DAE8 ,inset 0 0 80px #79DAE8;
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    animation: 5s alternate infinite;
+    animation-name: profile-circle-1;
+}
+.profile-circle-3{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 50px solid #79DAE8;
+    box-shadow: 0 0 40px #79DAE8 ,inset 0 0 40px #79DAE8;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    animation: 7s alternate infinite;
+    animation-name: profile-circle-3;
+}
+.profile-circle-2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 45px solid #79DAE8;
+    box-shadow: 0 0 40px #79DAE8 ,inset 0 0 40px #79DAE8;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    animation: 4s alternate infinite;
+    animation-name: profile-circle-2;
+}
+.profile-img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 35px solid cyan;
+    box-shadow: 0 0 70px cyan;
+    z-index: 10010;
+    animation: 3s alternate infinite;
+    animation-name: profile-img;
+}
+.icon-group{
+    display: flex;
+    height: 50px;
+    bottom: 50px;
+    right: 70px;
+    position: absolute;
+}
+.icon-item{
+    font-size: 30px;
+    margin: 0 5px;
+    color: cyan;
+    transition: 0.5s;
+}
+.icon-item:hover{
+    margin-bottom: 10px;
+}
+/*about section*/
+.word-18{
+    font-size: 500px;
+    font-family: 'Oswald', sans-serif;
+   }
+.years-letter{
+    right: 60px;
+    color: rgba(0, 0, 0, 0.5);
+    top: 60px;
+    font-size: 25px;
+}
+#fp-nav.fp-right{
+    right: 15px;
+}
+#fp-nav ul li a span,.fp-slidesNav ul li a span{
+    background-color: white;
+}
+/*loading-page-animation*/
+.Bg-dark{
+    background-color: #2b2b2b;
+    position: fixed;
+    width: 100%;
+}
+.H-Container{
+    width: 300px;
+    height: 300px;
+}
+.Left-H{
+    width: 15px;
+    height: 120px;
+    background-color: cyan;
+    position: absolute;
+    top: 89px;
+    left: 105px;
+    animation-name: Left-H-animation;
+    animation-duration: 3s;
+}
+.Center-H{
+    width: 85px;
+    height: 16px;
+    background-color: cyan;
+    position: absolute;
+    top: 48%;
+    right: 108px;
+    animation-name: Center-H-animation;
+    animation-duration: 3s;
+
+}
+.Right-H{
+    width: 15px;
+    height: 120px;
+    background-color: cyan;
+    position: absolute;
+    top: 89px;
+    right: 105px;
+    animation-name: Right-H-animation;
+    animation-duration: 3s;
+
+}
+.Border-circle{
+    width: 220px;
+    height: 220px;
+    border: 14px solid cyan;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0 0 50px cyan;
+    animation-name: Border-H-animation;
+    animation-duration: 6s;
+
+}
+.Loader-page-1{
+    position: fixed;
+    animation-name: loader-page;
+    /*transition: 0.5s;*/
+    animation-delay: 4s;
+    animation-duration: 0.8s;
+}
+
+
+@keyframes Left-H-animation {
+    to{
+        opacity: 1;
+        left: 105px;
+    }
+    from{
+        opacity: 0;
+        left: -1px;
+    }
+}
+@keyframes Center-H-animation {
+    to{
+        opacity: 1;
+        top: 48%;
+    }
+    from{
+        opacity: 0;
+        top: -1px;
+    }
+}
+@keyframes Right-H-animation {
+    to{
+        opacity: 1;
+        right: 105px;
+
+    }
+    from{
+        opacity: 0;
+        right: -1px;
+
+    }
+}
+@keyframes loader-page {
+    to{
+        top: -1200px;
+    }
+    from{
+        top: 0;
+    }
+}
+@keyframes Border-H-animation {
+    0%{
+        opacity: 0;
+    }
+    10%{
+
+    }
+    20%{
+
+    }
+    30%{
+
+    }
+    40%{
+        opacity: 0;
+
+    }
+    50%{
+
+    }
+    60%{
+
+
+    }
+    70%{
+
+    }
+    80%{
+
+    }
+    90%{
+
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@keyframes profile-circle-1 {
+    to{
+        top: -200px;
+        right: -160px;
+    }
+    from{
+        top: -100px;
+        right: -190px;
+    }
+}
+@keyframes profile-circle-2{
+    to{
+        bottom: 30px;
+        left: 20px;
+    }
+    from{
+        bottom: 80px;
+        left: 20px;
+    }
+}
+@keyframes profile-circle-3{
+    to{
+        bottom: 170px;
+        right: 360px;
+    }
+    from{
+        bottom: 20px;
+        right: 200px;
+    }
+}
+@keyframes profile-img {
+    to{
+        box-shadow: 0 0 80px cyan;
+    }
+    from{
+        box-shadow: 0 0 25px cyan;
+    }
+}
+@media screen and (max-width:414px) {
+    .profile-circle-1{
+        display: none;
+    }
+    .profile-circle-2{
+        display: none;
+
+    }
+    .profile-circle-3{
+        display: none;
+
+    }
+    .profile-img{
+        width: 330px;
+        height: 330px;
+        margin-bottom: 120px;
+    }
+}
+
+
+
+/*color-palette*/
+/*https://colorhunt.co/palette/e8f9fd79dae80aa1dd2155cd*/

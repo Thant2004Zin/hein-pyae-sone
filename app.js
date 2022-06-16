@@ -5,14 +5,14 @@ let firstSection = document.getElementById('HeroSection')
 setTimeout(
     function (){
         loader.remove();
-    },4500);
+    },4000);
 
 
 new fullpage('#fullpage', {
     //options here
-    autoScrolling:true,
-    scrollHorizontally: true,
+
     navigation: true,
+    parallax: true,
 
 });
 

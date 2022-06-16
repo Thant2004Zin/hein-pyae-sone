@@ -20,7 +20,18 @@ body{
     transform: rotate(-90deg);
     z-index: 10020;
     top: 45%;
-    left: -50px;
+    left: -65px;
+    position: absolute;
+}
+.about-me{
+    margin: 0;
+    color: rgba(52, 52, 52, 0.31);
+    font-weight: bold;
+    letter-spacing: 30px;
+    transform: rotate(-90deg);
+    z-index: 10020;
+    top: 45%;
+    left: -30px;
     position: absolute;
 }
 .my-btn{
@@ -67,11 +78,15 @@ body{
     border-radius: 50%;
     border: 45px solid #79DAE8;
     box-shadow: 0 0 40px #79DAE8 ,inset 0 0 40px #79DAE8;
-    position: fixed;
+    position: absolute;
     bottom: 30px;
     left: 20px;
-    animation: 4s alternate infinite;
+    animation: 6s alternate infinite;
     animation-name: profile-circle-2;
+}
+.words-container{
+    background-color: #79DAE8;
+    border-radius: 30px;
 }
 .profile-img{
     width: 450px;
@@ -80,7 +95,7 @@ body{
     border: 35px solid cyan;
     box-shadow: 0 0 70px cyan;
     z-index: 10010;
-    animation: 3s alternate infinite;
+    animation: 3.5s alternate infinite;
     animation-name: profile-img;
 }
 .icon-group{
@@ -88,7 +103,8 @@ body{
     height: 50px;
     bottom: 25px;
     right: 70px;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
 }
 .icon-item{
     height: 100%;
@@ -100,20 +116,31 @@ body{
 .icon-item:hover{
     margin-bottom: 12px;
 }
+.icon-group-2{
+    width: 245px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.icon-item-2{
+    font-size: 45px;
+
+}
 /*about section*/
 .word-18{
     font-size: 400px;
     font-family: 'Oswald', sans-serif;
+    color: #E8F9FD;
    }
 .years-letter{
     right: 60px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     top: 60px;
     font-size: 25px;
 }
 .shadow-to-text{
     /*text-shadow:  0 0 20px cyan;*/
-    /*color: white;*/
+    color: #E8F9FD;
 }
 #section3 .fp-bg{
     background-image: url('img/mi3y7M.jpg');
@@ -185,6 +212,7 @@ body{
     /*transition: 0.5s;*/
     animation-delay: 3s;
     animation-duration: 1.5s;
+    z-index: 10040;
 }
 
 
@@ -282,7 +310,7 @@ body{
         left: 20px;
     }
     from{
-        bottom: 100px;
+        bottom: 220px;
         left: 20px;
     }
 }
@@ -298,12 +326,13 @@ body{
 }
 @keyframes profile-img {
     to{
-        box-shadow: 0 0 80px cyan;
+        box-shadow: 0 0 100px cyan;
     }
     from{
         box-shadow: 0 0 25px cyan;
     }
 }
+
 @media screen and (max-width:414px) {
     .profile-circle-1{
         display: none;

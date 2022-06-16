@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/atropos/atropos.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,15 +43,17 @@
 <!--    </div>-->
 <!--</section>-->
 
-
+<div class="icon-group align-items-end">
+    <i class="fa-brands fa-facebook fa-fw icon-item"></i>
+    <i class="fa-brands fa-instagram fa-fw icon-item"></i>
+    <i class="fa-brands fa-discord fa-fw icon-item"></i>
+    <i class="fa-brands fa-telegram fa-fw icon-item"></i>
+</div>
 <div id="fullpage">
     <section class="section position-relative" id="HeroSection">
         <div class="profile-circle-1"></div>
         <div class="profile-circle-2"></div>
         <div class="profile-circle-3"></div>
-
-
-
 
 
         <div class="container vh-100">
@@ -69,38 +72,61 @@
                         <img src="img/284063072_1185996715495668_2567231920257096128_n.jpg" class="img-fluid profile-img" alt="">
                     </div>
                 </div>
-
-
             </div>
-            <div class="icon-group align-items-end">
-                <i class="fa-brands fa-facebook fa-fw icon-item"></i>
-                <i class="fa-brands fa-instagram fa-fw icon-item"></i>
-                <i class="fa-brands fa-discord fa-fw icon-item"></i>
-                <i class="fa-brands fa-telegram fa-fw icon-item"></i>
-            </div>
+
         </div>
     </section>
 
-    <section class="section position-relative" style="background-color: #cbf3fa">
+    <section class="section position-relative overflow-hidden p-0" style="background-color: #79DAE8">
+
+            <div class="w-100 position-absolute">
+                <div class="secSection-circle-1"></div>
+            </div>
+
+
+
+
         <div class="container vh-100">
+            <p class="about-me">About</p>
+
+
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-lg-6">
-                <div class="words-container position-relative">
-                    <p class="position-absolute years-letter">Years Old</p>
-                    <h1 class="word-18 fw-bold text-center">
-                        18</h1>
-                </div>
+                    <div class="atropos my-atropos">
+                        <!-- scale container (required) -->
+                        <div class="atropos-scale">
+                            <!-- rotate container (required) -->
+                            <div class="atropos-rotate">
+                                <!-- inner container (required) -->
+                                <div class="atropos-inner" style="border-radius: 30px">
+
+                                    <div class="words-container position-relative">
+                                        <p class="position-absolute years-letter fw-bold">Years Old</p>
+                                        <h1 class="word-18 fw-bold text-center">
+                                            18</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col-lg-6">
-                        <h1 class="display-3 fw-bold shadow-to-text">Student at MMSIT</h1>
-                    <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa dignissimos ratione reiciendis saepe soluta velit voluptatem voluptatibus! Consectetur corporis dolore inventore nam, quasi rerum?</p>
+                        <p class="text-white-50 mb-0">Since 2019</p>
+                        <h1 class="display-3 fw-bold shadow-to-text text-white">Student at MMSIT</h1>
+                    <p class="text-white-50">Lorem ipsum dolor sit amet. Beatae culpa dignissimos ratione reiciendis saepe soluta velit voluptatem voluptatibus! Consectetur corporis dolore inventore nam, quasi rerum?</p>
+                    <div class="icon-group-2 align-items-end">
+                        <i class="fa-brands fa-html5 fa-fw icon-item-2"></i>
+                        <i class="fa-brands fa-css3 fa-fw icon-item-2"></i>
+                        <i class="fa-brands fa-js-square fa-fw  icon-item-2"></i>
+                        <i class="fa-brands fa-bootstrap fa-fw  icon-item-2"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section fp-bg" style="background-color: #9ae0fd" id="section3">
+    <section class="section " style="background-color: #9ae0fd" id="section3">
         <div class="container vh-100">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-3">
@@ -118,14 +144,17 @@
 </div>
 
 
-<script>
-    setTimeout(
-        function (){
-            scroll(window.top)
-        },3400)
-</script>
+
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/fullpage.js/dist/fullpage.js"></script>
+<script src="./node_modules/atropos/atropos.min.js"></script>
 <script src="app.js"></script>
+<script>
+    const myAtropos = Atropos({
+        el: '.my-atropos',
+        // rest of parameters
+    });
+</script>
+
 </body>
 </html>

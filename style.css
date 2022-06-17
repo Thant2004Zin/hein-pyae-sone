@@ -20,7 +20,7 @@ body{
     transform: rotate(-90deg);
     z-index: 10020;
     top: 45%;
-    left: -65px;
+    left: -70px;
     position: absolute;
 }
 .about-me{
@@ -142,10 +142,30 @@ body{
     /*text-shadow:  0 0 20px cyan;*/
     color: #E8F9FD;
 }
-#section3 .fp-bg{
-    background-image: url('img/mi3y7M.jpg');
-    background-size: cover;
-    background-position: center 80%;
+
+
+/*third-section*/
+.section-3-bg{
+    background-image: url("img/Untitled-1.png");
+}
+.upper-layer-blur{
+    z-index: 1;
+    background-color: rgba(52, 52, 52, 0.53);
+    backdrop-filter: blur(20);
+}
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+    background-color: #D14233;
+}
+[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+    background-color: #135796;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
 }
 #fp-nav.fp-right{
     right: 15px;
